@@ -73,7 +73,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(images/home.jpg) no-repeat;
+    background: url(images/myimage.pn) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -188,6 +188,7 @@ section{
     transition: .5s;
 }
 
+
 .home-sci a:hover{
     color: var(--bg-color);
 }
@@ -206,4 +207,14 @@ section{
 
 .home-sci a:hover::before{
     width: 100%;
+}
+
+.home-imgHover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid red;
 }
