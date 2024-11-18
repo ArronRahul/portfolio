@@ -115,7 +115,14 @@ section{
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
 }
+
 
 .home-content p{
    font-size: 1.6rem;
@@ -294,6 +301,7 @@ span{
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
+    animation: aboutSpinner 10s linear infinite;
 }
 
 .about-content{
@@ -814,4 +822,21 @@ span{
         font-size: 5rem;
     }
 
+}
+
+/* KEYFRAMES ANIMATIONS */
+
+@keyframes homeBgText{
+    0%,10%,100%{
+        background-position: -33rem 0;
+    }
+    65%,85%{
+        background-position: 0 0;
+    }
+}
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
