@@ -792,14 +792,25 @@ span{
     .home{
         justify-content: center;
     }
+    .home-sci{
+        bottom: 8rem;
+    }
+
     .home-content{
         display: flex;
         align-items: center;
         flex-direction: column;
-        text-align: center
+        text-align: center;
+        gap: 3rem;
     }
     .home-content h1{
         font-size: 5.2rem;
+    }
+    .about {
+        gap:5rem;
+    }
+    .about-content p {
+        margin: 3rem 0 4rem;
     }
     .education{
         padding: 10rem  4% 5rem 5%;
