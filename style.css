@@ -807,7 +807,7 @@ span{
     }
 }
 
-@media (max-width: 371px) {
+@media (max-width: 390px) {
     .home{
         justify-content: center;
     }
