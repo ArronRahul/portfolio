@@ -774,6 +774,9 @@ span{
     html{
         font-size: 45%;
     }
+    .home{
+        justify-content: center;
+    }
     .home-content h1{
         display: flex;
         flex-direction: column;
@@ -785,17 +788,9 @@ span{
         width: 38px;
         height: 38px;
     }
-}
-
-@media (max-width: 480px) {
-
-    .home{
-        justify-content: center;
-    }
     .home-sci{
         bottom: 8rem;
     }
-
     .home-content{
         display: flex;
         align-items: center;
@@ -803,15 +798,24 @@ span{
         text-align: center;
         gap: 3rem;
     }
-    .home-content h1{
-        font-size: 5.2rem;
-    }
     .about {
         gap:5rem;
     }
     .about-content p {
         margin: 3rem 0 4rem;
     }
+}
+
+@media (max-width: 420px) {
+
+    .home{
+        justify-content: center;
+    }
+
+    .home-content h1{
+        font-size: 5.2rem;
+    }
+    
     .education{
         padding: 10rem  4% 5rem 5%;
     }
